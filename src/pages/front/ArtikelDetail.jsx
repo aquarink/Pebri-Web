@@ -12,7 +12,7 @@ const ArtikelDetail = () => {
 
     const { slug } = useParams();
 
-    const endPoint = "http://localhost:8899/"
+    const endPoint = "https://api.juripebrianto.my.id/"
 
     const [konten, setKonten] = useState({ 
         detailArtikel : [], 
@@ -66,7 +66,7 @@ const ArtikelDetail = () => {
                         </div>
                     </div>
                     <div className="col-md-6 pr-0">
-                        <img src={`http://localhost:8899/${val.thumb}`} />
+                        <img src={`https://assets.juripebrianto.my.id/${val.thumb}`} />
                     </div>
                 </div>
                 )}
@@ -96,7 +96,7 @@ const ArtikelDetail = () => {
                         {/* <div className="flex-md-row box-shadow h-xl-300"> */}
                         {konten.randomArtikel6.KontenJson?.map((val) => 
                         <div className="col-md-4 mb-3 d-flex align-items-center">
-                            <img width="135" height="80" src={`http://localhost:8899/${val.thumb}`} />
+                            <img width="135" height="80" src={`https://assets.juripebrianto.my.id/${val.thumb}`} />
                             <div className="pl-3">
                                 <h2 className="mb-2 h6 font-weight-bold">
                                     <a key={val.kode}  className="text-dark" href={`/artikel/${val.slug}`}>{val.judul}</a>

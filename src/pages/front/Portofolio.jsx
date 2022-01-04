@@ -9,7 +9,7 @@ import FooterFront from '../../templates/front/Footer';
 
 const Portofolio = () => {
 
-    const endPoint = "http://localhost:8899/"
+    const endPoint = "https://api.juripebrianto.my.id/"
 
     const [konten, setKonten] = useState({ 
         semuaPortofolio : [], 
@@ -35,7 +35,7 @@ const Portofolio = () => {
                     {konten.semuaPortofolio.KontenJson?.map((val) => 
                     <div className="col-lg-6">
                         <div className="card border-0 mb-4 box-shadow h-xl-300">
-                            <div style={{ backgroundSize: 'cover', backgroundImage: `url("http://localhost:8899/${val.thumb}")`, height: '150px', backgroundRepeat: 'no-repeat' }}></div>
+                            <div style={{ backgroundSize: 'cover', backgroundImage: `url("https://assets.juripebrianto.my.id/${val.thumb}")`, height: '150px', backgroundRepeat: 'no-repeat' }}></div>
                             <div className="card-body px-0 pb-0 d-flex flex-column align-items-start">
                                 <h2 className="h4 font-weight-bold">
                                     <a key={val.kode}  className="text-dark" href={`/artikel/${val.slug}`}>{val.judul}</a>

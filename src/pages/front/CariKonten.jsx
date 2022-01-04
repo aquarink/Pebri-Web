@@ -13,7 +13,7 @@ const CariKonten = () => {
     const search = useLocation().search;
     const find = new URLSearchParams(search).get('find');
 
-    const endPoint = "http://localhost:8899/"
+    const endPoint = "https://api.juripebrianto.my.id/"
 
     const [konten, setKonten] = useState({ 
         kontenCari : [], 
@@ -50,7 +50,7 @@ const CariKonten = () => {
                                 <div className="card-text text-muted small">Juri Pebrianto</div>
                                 <small className="text-muted">{val.tanggal}</small>
                             </div>
-                            <img width="200" height="120" src={`http://localhost:8899/${val.thumb}`} />
+                            <img width="200" height="120" src={`https://assets.juripebrianto.my.id/${val.thumb}`} />
                         </div>
                         )}
                     </div>

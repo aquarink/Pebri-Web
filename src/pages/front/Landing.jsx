@@ -9,7 +9,7 @@ import HeaderFront from '../../templates/front/Header';
 import FooterFront from '../../templates/front/Footer';
 
 const Landing = () => {
-    const endPoint = "http://localhost:8899/"
+    const endPoint = "https://api.juripebrianto.my.id/"
 
     const [konten, setKonten] = useState({ 
         randomArtikel : [], 
@@ -59,7 +59,7 @@ const Landing = () => {
                                     <a href={`/artikel/${val.slug}`} className="btn btn-dark">Lanjut</a>
                                 </div>
 
-                                <div className="col-md-6 d-none d-md-block pr-0" style={{ backgroundSize: 'cover', backgroundImage: `url("http://localhost:8899/${val.thumb}")` }}></div>
+                                <div className="col-md-6 d-none d-md-block pr-0" style={{ backgroundSize: 'cover', backgroundImage: `url("https://assets.juripebrianto.my.id/${val.thumb}")` }}></div>
                             </div>
                         )}
                     </div>
@@ -72,7 +72,7 @@ const Landing = () => {
                     {konten.randomPortofolio.KontenJson?.map((val) => 
                     <div className="col-lg-6">
                         <div className="card border-0 mb-4 box-shadow h-xl-300">
-                            <div style={{ backgroundSize: 'cover', backgroundImage: `url("http://localhost:8899/${val.thumb}")`, height: '150px', backgroundRepeat: 'no-repeat' }}></div>
+                            <div style={{ backgroundSize: 'cover', backgroundImage: `url("https://assets.juripebrianto.my.id/${val.thumb}")`, height: '150px', backgroundRepeat: 'no-repeat' }}></div>
                             <div className="card-body px-0 pb-0 d-flex flex-column align-items-start">
                                 <h2 className="h4 font-weight-bold">
                                     <a key={val.kode}  className="text-dark" href={`/artikel/${val.slug}`}>{val.judul}</a>
@@ -93,7 +93,7 @@ const Landing = () => {
                         <div className="flex-md-row mb-4 box-shadow h-xl-300">
                         {konten.randomKonten.KontenJson?.map((val) => 
                             <div className="mb-3 d-flex align-items-center">
-                                <img width="175" height="80" src={`http://localhost:8899/${val.thumb}`} />
+                                <img width="175" height="80" src={`https://assets.juripebrianto.my.id/${val.thumb}`} />
                                 <div className="pl-3">
                                     <h2 className="mb-2 h6 font-weight-bold">
                                         <a key={val.kode}  className="text-dark" href={`/artikel/${val.slug}`}>{val.judul}</a>
@@ -123,7 +123,7 @@ const Landing = () => {
                                 <div className="card-text text-muted small">Juri Pebrianto</div>
                                 <small className="text-muted">{val.tanggal}</small>
                             </div>
-                            <img width="222" height="120" src={`http://localhost:8899/${val.thumb}`} />
+                            <img width="222" height="120" src={`https://assets.juripebrianto.my.id/${val.thumb}`} />
                         </div>
                         )}
                     </div>
