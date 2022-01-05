@@ -45,6 +45,22 @@ const ArtikelDetail = () => {
 
     const readDataDetail = (datanya) => {
         document.title = datanya.KontenJson[0].judul+" - Juri Pebrianto"
+
+        // 7 = title
+        // 8 = description
+        // 9 = keywords
+        // 10 = og:url
+        // 11 = og:title
+        // 12 = og:description
+        // 13 = og:image
+
+        document.getElementsByTagName("META").[7].content = datanya.KontenJson[0].judul+" - Juri Pebrianto"
+        document.getElementsByTagName("META").[8].content = datanya.KontenJson[0].short
+        document.getElementsByTagName("META").[9].content = datanya.KontenJson[0].tag
+        document.getElementsByTagName("META").[10].content = "https://juripebrianto.my.id/artikel/"+datanya.KontenJson[0].slug
+        document.getElementsByTagName("META").[11].content = datanya.KontenJson[0].judul+" - Juri Pebrianto"
+        document.getElementsByTagName("META").[12].content = datanya.KontenJson[0].short
+        document.getElementsByTagName("META").[13].content = "https://assets.juripebrianto.my.id/"+datanya.KontenJson[0].thumb
     }
 
     const countDown = async (slg) => {
