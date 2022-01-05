@@ -15,13 +15,13 @@ const Header = () => {
                     <div className="navbar-collapse collapse" id="navbarColor02">
                         <ul className="navbar-nav mr-auto d-flex align-items-center">
                             <li className="nav-item">
-                                <a className="nav-link" href="/artikel">Artikel</a>
+                                <a className="nav-link" href="/artikel">Article</a>
                             </li>
                             <li className="nav-item">
                                 <a className="nav-link" href="/portofolio">Portofolio</a>
                             </li>
                             <li className="nav-item">
-                                <a className="nav-link" href="/tentang">Tentang</a>
+                                <a className="nav-link" href="/tentang">About</a>
                             </li>
                         </ul>
                         <ul className="navbar-nav ml-auto d-flex align-items-center">
