@@ -16,6 +16,9 @@ const Artikel = () => {
     });
 
     useEffect(() => {
+
+        document.title = "Artikel atau Tulisan - Juri Pebrianto"
+
         const fetchData = async () => {
             const RESsemuaArtikel = await axios(endPoint+"artikel-semua");
   

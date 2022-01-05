@@ -7,7 +7,7 @@ const Header = () => {
             <nav className="topnav navbar navbar-expand-lg navbar-light bg-white fixed-top">
                 <div className="container">
                     <a className="navbar-brand" href="/">
-                        <strong>Pebri</strong>
+                        <strong>Juri Pebrianto</strong>
                     </a>
                     <button className="navbar-toggler collapsed" type="button" data-toggle="collapse" data-target="#navbarColor02" aria-controls="navbarColor02" aria-expanded="false" aria-label="Toggle navigation">
                         <span className="navbar-toggler-icon"></span>

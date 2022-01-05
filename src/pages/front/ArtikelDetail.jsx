@@ -19,8 +19,6 @@ const ArtikelDetail = () => {
         randomArtikel6: [], 
     });
 
-    const [title, setTitle] = useState(document.title);
-
     useEffect(() => {
         const fetchData = async () => {
             const RESdetaikArtikel = await axios(endPoint+"detail-artikel?id="+slug);
@@ -30,25 +28,26 @@ const ArtikelDetail = () => {
                 detailArtikel : RESdetaikArtikel.data, 
                 randomArtikel6: RESrandomArtikel6.data, 
             });
+
+            readDataDetail(RESdetaikArtikel.data);
         };
 
         fetchData();
-        readDataDetail(RESdetaikArtikel);
 
         let viewTimer = setTimeout(() => countDown(slug), 5 * 1000);
         
         return () => {
             clearTimeout(viewTimer);
           };
+
+    // eslint-disable-next-line react-hooks/exhaustive-deps
     }, [slug]);
 
-    const readDataDetail(datanya) {
-        console.log(datanya.KontenJson)
-        // setTitle(datanya.KontenJson.judul);
+    const readDataDetail = (datanya) => {
+        document.title = datanya.KontenJson[0].judul+" - Juri Pebrianto"
     }
 
     const countDown = async (slg) => {
-        console.log("View : "+slg)
         await axios(endPoint+"view?id="+slg);
         return ""
     }

@@ -22,6 +22,9 @@ const Landing = () => {
     });
 
     useEffect(() => {
+
+        document.title = "Artikel dan Portofolio - Juri Pebrianto"
+
         const fetchData = async () => {
             const RESrandomArtikel = await axios(endPoint+"random-artikel");
             const RESrandomPortofolio = await axios(endPoint+"random-portofolio");

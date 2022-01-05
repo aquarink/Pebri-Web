@@ -13,6 +13,7 @@ import Artikel from './pages/front/Artikel'
 import ArtikelDetail from './pages/front/ArtikelDetail'
 import Portofolio from './pages/front/Portofolio'
 import CariKonten from './pages/front/CariKonten'
+import Tentang from './pages/front/Tentang'
 
 // PAGES BACK
 
@@ -26,6 +27,7 @@ function App() {
           <Route path="/artikel/:slug" exact element={<ArtikelDetail />} />
           <Route path="/cari" exact element={<CariKonten />} />
           <Route path="/portofolio" exact element={<Portofolio />} />
+          <Route path="/tentang" exact element={<Tentang />} />
         </Routes>
       </Fragment>
     </Router>

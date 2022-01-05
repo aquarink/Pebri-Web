@@ -16,6 +16,9 @@ const Portofolio = () => {
     });
 
     useEffect(() => {
+
+        document.title = "Portofolio - Juri Pebrianto"
+
         const fetchData = async () => {
             const RESsemuaPortofolio = await axios(endPoint+"portofolio-semua");
   

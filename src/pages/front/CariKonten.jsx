@@ -20,6 +20,9 @@ const CariKonten = () => {
     });
 
     useEffect(() => {
+
+        document.title = "Cari Artikel - Juri Pebrianto"
+
         const fetchData = async () => {
             const RESkontenCari = await axios(endPoint+"konten-cari?find="+find);
   
