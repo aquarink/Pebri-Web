@@ -52,167 +52,173 @@ const Tentang = () => {
         <>
         <HeaderFront />
             <div className="container">
-            <div className="bg-light rounded">
-                    <center><h1>I want to tell about me</h1></center>
-                    <p className="pJst">Currently, I'm happy to learn Framework for creating mobile applications,
-                        namely, <b>Flutter and ReactNative</b>, I'm new to ReactNative and for Flutter,
-                        I've made approximately 4 applications assisted by <b>Firebase for Push Notifications</b>,
-                        and I like to use <b>Spring Boot (Java Framework)</b> as the backend and this website is built using <b>ReactJS</b>.
-                        <br />
-                        <br />
-                        I have experience with <b>PHP programming</b> language, <b>Codeigneter</b> Framework, <b>Bootstrap Css</b> for about 5 years,
-                        I also have experience making 1 application using Java programming language with Springboot Framework,
-                        1 application with <b>Nodejs with Express</b> Framework and have also used <b>Laravel</b>. In building a website, usually I need <b>HTML,
-                            CSS and JavaScript,</b> I often also use jQuery and have also used Angular (version 1).
-                        <br />
-                        <br />
-                        In making applications, usually a database is needed, usually I use <b>MySql or MariaDB</b>, I have also used <b>MongoDb and Redis</b>.
-                        Software or tools in performing server and network needs, I use <b>Proxmox as virtual machine management</b> and in managing
-                        the versions or margins of the codes that have been created as well as backups, I use <b>Git, either uploaded to Github or Gitlab</b>.
-                        <br />
-                        <br />
-                        Most of the <b>Web applications and APIs</b> that I make, I deploy to a <b>VPS server</b> (made by Proxmox) using the <b>Centos operating system</b>,
-                        I am familiar with versions 6 and 7. I've never used <b>Amazon Web Service (AWS) or Google Cloud</b> because I mostly deploy to VPS (Centos),
-                        but I've taken an online study about AWS, I know little about <b>EC2 and CloudFront</b>.
-                    </p>
+                <article className="article-post" style={{textAlign: "justify"}}>
+                    Hi... Welcome to my website, the Juri Pebrianto website. I'm currently enjoying learning ReactJS, Go-Lang, and other programming-related stuff.
+                    <br />
+                    <br />
+                    Oh ya, from 2014 until now, I have experience in the IT and software developer fields, I focus on Backend Developers with the longest experience with the PHP (Web) programming language, as I said above, I open myself up to new technologies about programming languages, databases and everything related to programming or software development.
+                    <br />
+                    <br />
+                    I have a new experience for React-Js, React-Native, Go-Lang, by the way, this website juripebrianto.my.id is made with React-Js technology as the frontend and Go-Lang as the API and CMS and uses MongoDB as the database.
+                    <br />
+                    <br />
+                    I've made approximately 4 applications using Flutter/Dart plus Firebase, I also made the API, I made it using Codeigneter (PHP) with a MySql database.
+                    <br />
+                    <br />
+                    PHP and MySql are a combination that I often use to create WEB applications or APIs because these two are the ones I usually use, but I've also run projects using Spring Boot (Java), Express (NodeJs), I do the work as I wish. from the client, from the design to the programming language.
+                    <br />
+                    <br />
+                    The databases that I use are also quite diverse depending on the client's wishes too, so far I have made applications using MySql, MongoDB, and Redis databases.
+                    <br />
+                    <br />
+                    All applications that I make usually deploy or publish at the same time, I am familiar with cPanel/WHM and also the Centos/Linux operating system that runs on a Virtual Private Server (VPS), but I still use a VPS that is generally built using Proxmox, I haven't I've used AWS, GCP and the like, due to the habit of working where the company I currently work for already has a physical server placed in the data center.
+                    <br />
+                    <br />
+                    In creating applications or projects, I always use GIT, either GitHub or Gitlab as a place where I and my team can work on projects together without fear of losing files or data.
+                    <br />
+                    <br />
+                    More or less the activities or whatever I do, if I have free time I usually like to travel or attend seminars/workshops/meetups related to programming or software development.
+                    <br />
+                    <br />
+                    Thank you for taking the time to read this article, have a nice and healthy day.
+                </article>
+                <hr />
+                <Container>
+                    <Row>
+                        <Col className="padingThumb" xs={6} md={2}>
+                            <Image style={{ width: 200 }} src={flutter} thumbnail />
+                        </Col>
+                        <Col className="padingThumb" xs={6} md={2}>
+                            <Image style={{ width: 200 }} src={reactNative} thumbnail />
+                        </Col>
+                        <Col className="padingThumb" xs={6} md={2}>
+                            <Image style={{ width: 200 }} src={firebase} thumbnail />
+                        </Col>
+                        <Col className="padingThumb" xs={6} md={2}>
+                            <Image style={{ width: 200 }} src={springBoot} thumbnail />
+                        </Col>
+                        <Col className="padingThumb" xs={6} md={2}>
+                            <Image style={{ width: 200 }} src={php} thumbnail />
+                        </Col>
+                        <Col className="padingThumb" xs={6} md={2}>
+                            <Image style={{ width: 200 }} src={codeIgniter} thumbnail />
+                        </Col>
+                    {/* </Row>
+                    <br />
+                    <br />
+                    <Row> */}
+                        <Col className="padingThumb" xs={6} md={2}>
+                            <Image style={{ width: 200 }} src={bootstrap} thumbnail />
+                        </Col>
+                        <Col className="padingThumb" xs={6} md={2}>
+                            <Image style={{ width: 200 }} src={nodejs} thumbnail />
+                        </Col>
+                        <Col className="padingThumb" xs={6} md={2}>
+                            <Image style={{ width: 200 }} src={expressjs} thumbnail />
+                        </Col>
+                        <Col className="padingThumb" xs={6} md={2}>
+                            <Image style={{ width: 200 }} src={laravel} thumbnail />
+                        </Col>
+                        <Col className="padingThumb" xs={6} md={2}>
+                            <Image style={{ width: 200 }} src={web} thumbnail />
+                        </Col>
+                        <Col className="padingThumb" xs={6} md={2}>
+                            <Image style={{ width: 200 }} src={mysql} thumbnail />
+                        </Col>
+                    {/* </Row>
+                    <br />
+                    <br />
+                    <Row> */}
+                        <Col className="padingThumb" xs={6} md={2}>
+                            <Image style={{ width: 200 }} src={mariadb} thumbnail />
+                        </Col>
+                        <Col className="padingThumb" xs={6} md={2}>
+                            <Image style={{ width: 200 }} src={mongodb} thumbnail />
+                        </Col>
+                        <Col className="padingThumb" xs={6} md={2}>
+                            <Image style={{ width: 200 }} src={redis} thumbnail />
+                        </Col>
+                        <Col className="padingThumb" xs={6} md={2}>
+                            <Image style={{ width: 200 }} src={proxmox} thumbnail />
+                        </Col>
+                        <Col className="padingThumb" xs={6} md={2}>
+                            <Image style={{ width: 200 }} src={git} thumbnail />
+                        </Col>
+                        <Col className="padingThumb" xs={6} md={2}>
+                            <Image style={{ width: 200 }} src={github} thumbnail />
+                        </Col>
+                    {/* </Row>
+                    <br />
+                    <br />
+                    <Row> */}
+                        <Col className="padingThumb" xs={6} md={2}>
+                            <Image style={{ width: 200 }} src={restapi} thumbnail />
+                        </Col>
+                        <Col className="padingThumb" xs={6} md={2}>
+                            <Image style={{ width: 200 }} src={gitlab} thumbnail />
+                        </Col>
+                        <Col className="padingThumb" xs={6} md={2}>
+                            <Image style={{ width: 200 }} src={centos} thumbnail />
+                        </Col>
+                        <Col className="padingThumb" xs={6} md={2}>
+                            <Image style={{ width: 200 }} src={reactJs} thumbnail />
+                        </Col>
+                        <Col className="padingThumb" xs={6} md={2}>
+                            <Image style={{ width: 200 }} src={linux} thumbnail />
+                        </Col>
+                        <Col className="padingThumb" xs={6} md={2}>
+                            <Image style={{ width: 200 }} src={golang} thumbnail />
+                        </Col>
+                    </Row>
                     <hr />
+                    {/* SOSIAL */}
                     <Container>
+                    <h5 style={{ textAlign: 'center' }}>network</h5>
                         <Row>
-                            <Col className="padingThumb" xs={6} md={2}>
-                                <Image style={{ width: 200 }} src={flutter} thumbnail />
+                            <Col md={2}></Col>
+
+                            <Col md={8}>
+                                <Row>
+                                    <Col xs={2} md={2}>
+                                        <a href="http://bit.ly/GitPebri" target="_blank" rel="noreferrer">
+                                            <Image style={{ width: 40 }} src={sosGithub} thumbnail />
+                                        </a>
+                                    </Col>
+                                    <Col xs={2} md={2}>
+                                        <a href="http://bit.ly/GitlabPebr" target="_blank" rel="noreferrer">
+                                            <Image style={{ width: 40 }} src={sosGitlab} thumbnail />
+                                        </a>
+                                    </Col>
+                                    <Col xs={2} md={2}>
+                                        <a href="http://bit.ly/GuruShoot" target="_blank" rel="noreferrer">
+                                            <Image style={{ width: 40 }} src={sosGuru} thumbnail />
+                                        </a>
+                                    </Col>
+                                    <Col xs={2} md={2}>
+                                        <a href="https://bit.ly/IgPebri" target="_blank" rel="noreferrer">
+                                            <Image style={{ width: 40 }} src={sosIg} thumbnail />
+                                        </a>
+                                    </Col>
+                                    <Col xs={2} md={2}>
+                                        <a href="https://bit.ly/CnlYtb" target="_blank" rel="noreferrer">
+                                            <Image style={{ width: 40 }} src={sosYt} thumbnail />
+                                        </a>
+                                    </Col>
+                                    <Col xs={2} md={2}>
+                                        <a href="https://bit.ly/LinkedInPebri" target="_blank" rel="noreferrer">
+                                            <Image style={{ width: 40 }} src={sosLinkedin} thumbnail />
+                                        </a>
+                                    </Col>
+                                </Row>
                             </Col>
-                            <Col className="padingThumb" xs={6} md={2}>
-                                <Image style={{ width: 200 }} src={reactNative} thumbnail />
-                            </Col>
-                            <Col className="padingThumb" xs={6} md={2}>
-                                <Image style={{ width: 200 }} src={firebase} thumbnail />
-                            </Col>
-                            <Col className="padingThumb" xs={6} md={2}>
-                                <Image style={{ width: 200 }} src={springBoot} thumbnail />
-                            </Col>
-                            <Col className="padingThumb" xs={6} md={2}>
-                                <Image style={{ width: 200 }} src={php} thumbnail />
-                            </Col>
-                            <Col className="padingThumb" xs={6} md={2}>
-                                <Image style={{ width: 200 }} src={codeIgniter} thumbnail />
-                            </Col>
-                        {/* </Row>
-                        <br />
-                        <br />
-                        <Row> */}
-                            <Col className="padingThumb" xs={6} md={2}>
-                                <Image style={{ width: 200 }} src={bootstrap} thumbnail />
-                            </Col>
-                            <Col className="padingThumb" xs={6} md={2}>
-                                <Image style={{ width: 200 }} src={nodejs} thumbnail />
-                            </Col>
-                            <Col className="padingThumb" xs={6} md={2}>
-                                <Image style={{ width: 200 }} src={expressjs} thumbnail />
-                            </Col>
-                            <Col className="padingThumb" xs={6} md={2}>
-                                <Image style={{ width: 200 }} src={laravel} thumbnail />
-                            </Col>
-                            <Col className="padingThumb" xs={6} md={2}>
-                                <Image style={{ width: 200 }} src={web} thumbnail />
-                            </Col>
-                            <Col className="padingThumb" xs={6} md={2}>
-                                <Image style={{ width: 200 }} src={mysql} thumbnail />
-                            </Col>
-                        {/* </Row>
-                        <br />
-                        <br />
-                        <Row> */}
-                            <Col className="padingThumb" xs={6} md={2}>
-                                <Image style={{ width: 200 }} src={mariadb} thumbnail />
-                            </Col>
-                            <Col className="padingThumb" xs={6} md={2}>
-                                <Image style={{ width: 200 }} src={mongodb} thumbnail />
-                            </Col>
-                            <Col className="padingThumb" xs={6} md={2}>
-                                <Image style={{ width: 200 }} src={redis} thumbnail />
-                            </Col>
-                            <Col className="padingThumb" xs={6} md={2}>
-                                <Image style={{ width: 200 }} src={proxmox} thumbnail />
-                            </Col>
-                            <Col className="padingThumb" xs={6} md={2}>
-                                <Image style={{ width: 200 }} src={git} thumbnail />
-                            </Col>
-                            <Col className="padingThumb" xs={6} md={2}>
-                                <Image style={{ width: 200 }} src={github} thumbnail />
-                            </Col>
-                        {/* </Row>
-                        <br />
-                        <br />
-                        <Row> */}
-                            <Col className="padingThumb" xs={6} md={2}>
-                                <Image style={{ width: 200 }} src={gitlab} thumbnail />
-                            </Col>
-                            <Col className="padingThumb" xs={6} md={2}>
-                                <Image style={{ width: 200 }} src={centos} thumbnail />
-                            </Col>
-                            <Col className="padingThumb" xs={6} md={2}>
-                                <Image style={{ width: 200 }} src={reactJs} thumbnail />
-                            </Col>
-                            <Col className="padingThumb" xs={6} md={2}>
-                                <Image style={{ width: 200 }} src={linux} thumbnail />
-                            </Col>
-                            <Col className="padingThumb" xs={6} md={2}>
-                                <Image style={{ width: 200 }} src={golang} thumbnail />
-                            </Col>
-                            <Col className="padingThumb" xs={6} md={2}>
-                                <Image style={{ width: 200 }} src={restapi} thumbnail />
-                            </Col>
+
+                            <Col md={2}></Col>
                         </Row>
                         <hr />
-                        {/* SOSIAL */}
-                        <Container>
-                        <h5 style={{ textAlign: 'center' }}>network</h5>
-                            <Row>
-                                <Col md={2}></Col>
-
-                                <Col md={8}>
-                                    <Row>
-                                        <Col xs={2} md={2}>
-                                            <a href="http://bit.ly/GitPebri" target="_blank" rel="noreferrer">
-                                                <Image style={{ width: 40 }} src={sosGithub} thumbnail />
-                                            </a>
-                                        </Col>
-                                        <Col xs={2} md={2}>
-                                            <a href="http://bit.ly/GitlabPebr" target="_blank" rel="noreferrer">
-                                                <Image style={{ width: 40 }} src={sosGitlab} thumbnail />
-                                            </a>
-                                        </Col>
-                                        <Col xs={2} md={2}>
-                                            <a href="http://bit.ly/GuruShoot" target="_blank" rel="noreferrer">
-                                                <Image style={{ width: 40 }} src={sosGuru} thumbnail />
-                                            </a>
-                                        </Col>
-                                        <Col xs={2} md={2}>
-                                            <a href="https://bit.ly/IgPebri" target="_blank" rel="noreferrer">
-                                                <Image style={{ width: 40 }} src={sosIg} thumbnail />
-                                            </a>
-                                        </Col>
-                                        <Col xs={2} md={2}>
-                                            <a href="https://bit.ly/CnlYtb" target="_blank" rel="noreferrer">
-                                                <Image style={{ width: 40 }} src={sosYt} thumbnail />
-                                            </a>
-                                        </Col>
-                                        <Col xs={2} md={2}>
-                                            <a href="https://bit.ly/LinkedInPebri" target="_blank" rel="noreferrer">
-                                                <Image style={{ width: 40 }} src={sosLinkedin} thumbnail />
-                                            </a>
-                                        </Col>
-                                    </Row>
-                                </Col>
-
-                                <Col md={2}></Col>
-                            </Row>
-                            <hr />
-                            <br />
-                            <br />
-                        </Container>
+                        <br />
+                        <br />
                     </Container>
-                </div>
+                </Container>
             </div>
             <FooterFront />
         </>
