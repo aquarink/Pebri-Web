@@ -23,6 +23,8 @@ const Landing = () => {
 
     useEffect(() => {
 
+        console.log(document.getElementsByTagName("META"))
+
         document.title = "Artikel dan Portofolio - Juri Pebrianto"
 
         const fetchData = async () => {
