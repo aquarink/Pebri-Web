@@ -2,6 +2,7 @@
 /* eslint-disable react/style-prop-object */
 import React, {useState, useEffect} from 'react'
 import { useParams, } from 'react-router'
+import MetaTags from 'react-meta-tags';
 import axios from "axios"; 
 
 // TEMPLATES
@@ -45,22 +46,6 @@ const ArtikelDetail = () => {
 
     const readDataDetail = (datanya) => {
         document.title = datanya.KontenJson[0].judul+" - Juri Pebrianto"
-
-        // 7 = title
-        // 8 = description
-        // 9 = keywords
-        // 10 = og:url
-        // 11 = og:title
-        // 12 = og:description
-        // 13 = og:image
-
-        document.getElementsByTagName("META").[7].content = datanya.KontenJson[0].judul+" - Juri Pebrianto"
-        document.getElementsByTagName("META").[8].content = datanya.KontenJson[0].short
-        document.getElementsByTagName("META").[9].content = datanya.KontenJson[0].tag
-        document.getElementsByTagName("META").[10].content = "https://juripebrianto.my.id/artikel/"+datanya.KontenJson[0].slug
-        document.getElementsByTagName("META").[11].content = datanya.KontenJson[0].judul+" - Juri Pebrianto"
-        document.getElementsByTagName("META").[12].content = datanya.KontenJson[0].short
-        document.getElementsByTagName("META").[13].content = "https://assets.juripebrianto.my.id/"+datanya.KontenJson[0].thumb
     }
 
     const countDown = async (slg) => {
@@ -70,6 +55,19 @@ const ArtikelDetail = () => {
 
     return (
         <>
+            {konten.detailArtikel.KontenJson?.map((val) => 
+                <MetaTags>
+                    <title>{val.judul}</title>
+                    <meta name="title" content={`${val.judul} - Juri Pebrianto`}></meta>
+                    <meta name="description" content={`${val.short}`}></meta>
+                    <meta name="keywords" content={`${val.judul}, Juri Pebrianto, juri, pebrianto`}></meta>
+
+                    <meta property="og:url" content={`https://juripebrianto.my.id/artikel/${val.slug}`}></meta>
+                    <meta property="og:title" content={`${val.judul} - Juri Pebrianto`}></meta>
+                    <meta property="og:description" content={`${val.short}`}></meta>
+                    <meta property="og:image" content={`https://assets.juripebrianto.my.id/${val.thumb}`}></meta>
+                </MetaTags>
+            )}
             <HeaderFront />
             <div className="container">
                 {konten.detailArtikel.KontenJson?.map((val) => 
@@ -79,9 +77,7 @@ const ArtikelDetail = () => {
                             <a  className="text-danger" href="/artikel">Artikel</a>
                         </p>
                         <h1 className="display-4 secondfont mb-3 font-weight-bold">{val.judul}</h1>
-                        {/* <p className="mb-3">
-                            Analysts told CNBC that the currency could hit anywhere between $1.35-$1.40 if the deal gets passed through the U.K. parliament.
-                        </p> */}
+                        {/* <p className="mb-3" dangerouslySetInnerHTML={{ __html: val.short }}></p> */}
                         <div className="d-flex align-items-center">
                             <img className="rounded-circle" src="https://cdn.dribbble.com/users/1418633/screenshots/4872860/media/90d80cd5fa8681c0667cd83123780698.png" width="70" />
                             <small className="ml-2">Juri Pebrianto <span className="text-muted d-block">{val.tanggal}</span>
