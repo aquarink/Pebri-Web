@@ -19,6 +19,8 @@ const ArtikelDetail = () => {
         randomArtikel6: [], 
     });
 
+    const [title, setTitle] = useState(document.title);
+
     useEffect(() => {
         const fetchData = async () => {
             const RESdetaikArtikel = await axios(endPoint+"detail-artikel?id="+slug);
@@ -31,6 +33,7 @@ const ArtikelDetail = () => {
         };
 
         fetchData();
+        readDataDetail(RESdetaikArtikel);
 
         let viewTimer = setTimeout(() => countDown(slug), 5 * 1000);
         
@@ -38,6 +41,11 @@ const ArtikelDetail = () => {
             clearTimeout(viewTimer);
           };
     }, [slug]);
+
+    const readDataDetail(datanya) {
+        console.log(datanya.KontenJson)
+        // setTitle(datanya.KontenJson.judul);
+    }
 
     const countDown = async (slg) => {
         console.log("View : "+slg)
