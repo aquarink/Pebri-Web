@@ -1,41 +1,30 @@
 import React from 'react'
+import { Container, Nav, Navbar } from "react-bootstrap";
+import { LinkContainer } from "react-router-bootstrap";
 
 const Header = () => {
 
     return (
         <>
-            <nav className="topnav navbar navbar-expand-lg navbar-light bg-white fixed-top">
-                <div className="container">
-                    <a className="navbar-brand" href="/">
-                        <strong>Juri Pebrianto</strong>
-                    </a>
-                    <button className="navbar-toggler collapsed" type="button" data-toggle="collapse" data-target="#navbarColor02" aria-controls="navbarColor02" aria-expanded="false" aria-label="Toggle navigation">
-                        <span className="navbar-toggler-icon"></span>
-                    </button>
-                    <div className="navbar-collapse collapse" id="navbarColor02">
-                        <ul className="navbar-nav mr-auto d-flex align-items-center">
-                            <li className="nav-item">
-                                <a className="nav-link" href="/artikel">Article</a>
-                            </li>
-                            <li className="nav-item">
-                                <a className="nav-link" href="/portofolio">Portofolio</a>
-                            </li>
-                            <li className="nav-item">
-                                <a className="nav-link" href="/tentang">About</a>
-                            </li>
-                        </ul>
-                        <ul className="navbar-nav ml-auto d-flex align-items-center">
-                            <li className="nav-item highlight">
-                                <form action='/cari' method='GET'>
-                                    <div style={{ marginBottom: '0px' }}  className="form-group">
-                                        <input type="text" name='find' className="form-control" placeholder="Carti konten disini" />
-                                    </div>
-                                </form>
-                            </li>
-                        </ul>
-                    </div>
-                </div>
-            </nav>
+            <Navbar bg="light" variant="light" expand="lg" fixed="top">
+                <Container>
+                    <Navbar.Brand href="/">Juri Pebrianto</Navbar.Brand>
+                    <Navbar.Toggle aria-controls="basic-navbar-nav" />
+                    <Navbar.Collapse id="basic-navbar-nav">
+                        <Nav className="me-auto">
+                            <LinkContainer exact to="/artikel">
+                                <Nav.Link>Article</Nav.Link>
+                            </LinkContainer >
+                            <LinkContainer exact to="/portofolio">
+                                <Nav.Link>Portofolio</Nav.Link>
+                            </LinkContainer>
+                            <LinkContainer exact to="/tentang">
+                                <Nav.Link>About</Nav.Link>
+                            </LinkContainer>
+                        </Nav>
+                    </Navbar.Collapse>
+                </Container>
+            </Navbar>
         </>
     );
 }
